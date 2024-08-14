@@ -1,0 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: poppins,sans-serif;
+}
+
+@layer utilities{
+    .login-dialog{
+        @apply hidden fixed top-[200px] lg:left-[30%]  lg:right-[30%] max-lg:left-[25%] max-lg:right-[25%] max-sm:left-[15%] max-sm:right-[15%] z-10 backdrop-filter backdrop-blur-sm
+    }
+
+    .login-dialog.open {
+        @apply block
+    }
+}
